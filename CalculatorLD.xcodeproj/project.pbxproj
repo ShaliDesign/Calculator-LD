@@ -12,6 +12,8 @@
 		C0F839C21E9B304C00CA2203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F839C01E9B304C00CA2203 /* Main.storyboard */; };
 		C0F839C41E9B304C00CA2203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F839C31E9B304C00CA2203 /* Assets.xcassets */; };
 		C0F839C71E9B304C00CA2203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F839C51E9B304C00CA2203 /* LaunchScreen.storyboard */; };
+		C0F839D11E9B527700CA2203 /* OperatorsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F839D01E9B527700CA2203 /* OperatorsButton.swift */; };
+		C0F839D31E9B56BA00CA2203 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F839D21E9B56BA00CA2203 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C0F839C31E9B304C00CA2203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0F839C61E9B304C00CA2203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0F839C81E9B304C00CA2203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F839D01E9B527700CA2203 /* OperatorsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsButton.swift; sourceTree = "<group>"; };
+		C0F839D21E9B56BA00CA2203 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				C0F839BC1E9B304C00CA2203 /* AppDelegate.swift */,
 				C0F839BE1E9B304C00CA2203 /* ViewController.swift */,
 				C0F839C01E9B304C00CA2203 /* Main.storyboard */,
+				C0F839D21E9B56BA00CA2203 /* GradientView.swift */,
+				C0F839D01E9B527700CA2203 /* OperatorsButton.swift */,
 				C0F839C31E9B304C00CA2203 /* Assets.xcassets */,
 				C0F839C51E9B304C00CA2203 /* LaunchScreen.storyboard */,
 				C0F839C81E9B304C00CA2203 /* Info.plist */,
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F839D11E9B527700CA2203 /* OperatorsButton.swift in Sources */,
 				C0F839BF1E9B304C00CA2203 /* ViewController.swift in Sources */,
+				C0F839D31E9B56BA00CA2203 /* GradientView.swift in Sources */,
 				C0F839BD1E9B304C00CA2203 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +312,7 @@
 				C0F839CD1E9B304C00CA2203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
