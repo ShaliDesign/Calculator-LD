@@ -10,10 +10,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var distanceBetweenInputTextFieldAndResultLabel: NSLayoutConstraint!
+    
+    @IBOutlet weak var distanceBetweenResultLabelAndMiddleView: NSLayoutConstraint!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
+    
+    override func updateViewConstraints() {
+        super.updateViewConstraints()
+    updateConstraints()
+        
+    }
+    
+        
+        
+        func updateConstraints() -> Void {
+            
+        let scale = UIScreen.main.bounds.size.height / 667
+            
+            distanceBetweenResultLabelAndMiddleView.constant = UIScreen.main.bounds.size.height > 488 ? distanceBetweenResultLabelAndMiddleView.constant * scale :distanceBetweenResultLabelAndMiddleView.constant * 0.1
+        
+            
+            distanceBetweenInputTextFieldAndResultLabel.constant = UIScreen.main.bounds.size.height > 488 ? distanceBetweenInputTextFieldAndResultLabel.constant * scale : distanceBetweenInputTextFieldAndResultLabel.constant * 0.1
+        }
+        
+        
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
